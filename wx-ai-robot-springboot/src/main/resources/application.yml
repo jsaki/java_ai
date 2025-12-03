@@ -1,0 +1,14 @@
+server:
+  port: 8080 # ??????
+spring:
+  ai:
+    deepseek:
+      api-key: sk-3cdc46b11a944d62b5c8ea2ff83522cf # ?? DeepSeek Api Key, ??????
+      base-url: https://api.deepseek.com # DeepSeek ??? URL, ???????? api.deepseek.com
+      chat:
+        options:
+          model: deepseek-chat # ??????
+          temperature: 0.8 # ???
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: debug
